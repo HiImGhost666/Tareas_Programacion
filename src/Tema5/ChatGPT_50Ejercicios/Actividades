@@ -1,0 +1,49 @@
+
+Diagonal Principal y Secundaria
+Dado un array bidimensional cuadrado, crea un programa que extraiga la diagonal principal y la diagonal secundaria en dos arrays diferentes. Además, calcula la suma de los elementos de ambas diagonales.
+
+Números Duplicados
+Escribe un programa que reciba un array de números enteros y devuelva un nuevo array que contenga solo los números que se repiten en el array original. Además, elimina los duplicados en el array resultante.
+
+
+Veificación de Sudoku
+Escribe un programa que verifique si una matriz de 9x9 representa una solución válida de Sudoku. El programa debe comprobar que no haya números repetidos en filas, columnas y subcuadrículas de 3x3.
+
+
+Ejercicios de funciones con Arrays
+
+Palabras Más Largas
+Escribe una función que reciba un array de palabras y un número n, y devuelva un nuevo array con las palabras cuya longitud sea mayor a n.
+
+Contador de Frecuencia
+Crea una función que reciba un array de números enteros y devuelva un nuevo array donde cada elemento indique cuántas veces aparece ese número en el array original.
+
+Buscar Subarray
+Escribe una función que reciba dos arrays: uno principal y otro más pequeño. La función debe verificar si el segundo array está contenido en el primero como una subsecuencia consecutiva.
+
+Compactar un Array
+Crea una función que reciba un array de números enteros y elimine todos los ceros, devolviendo un nuevo array sin alterar el orden de los demás elementos.
+
+Intersección de Arrays
+Escribe una función que tome dos arrays y devuelva un tercer array con los elementos comunes a ambos, sin repetir elementos.
+
+Combinación de bucles y condicionales
+
+Encontrar la Submatriz Mayor
+Escribe un programa que tome una matriz de números enteros (positivos y negativos) y encuentre la submatriz rectangular con la suma más alta. Devuelve la suma máxima y las coordenadas de la submatriz.
+
+Transformación de Matriz
+Dada una matriz, reemplaza todos los elementos en la misma fila y columna de cada 0 con ceros. Devuelve la matriz modificada.
+
+Ordenar Palabras
+Implementa un programa que tome un array de palabras y las ordene alfabéticamente (sin usar funciones integradas como Arrays.sort).
+
+Reemplazo en Matriz
+Crea un programa que busque un número específico en una matriz bidimensional y lo reemplace por otro número dado. Además, muestra cuántas veces fue reemplazado.
+
+Rellenar Matriz Espiral
+Escribe un programa que rellene una matriz cuadrada de n x n con números consecutivos en forma de espiral, empezando desde la esquina superior izquierda. Por ejemplo, para n = 3:
+
+1  2  3
+8  9  4
+7  6  5
