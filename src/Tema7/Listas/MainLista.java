@@ -1,4 +1,4 @@
-public class Main {
+public class MainLista {
     public static void main(String[] args) {
         Lista lista = new Lista();
         lista.insertar("Juan");

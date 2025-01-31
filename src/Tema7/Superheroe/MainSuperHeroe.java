@@ -1,4 +1,4 @@
-public class Main {
+public class MainSuperHeroe {
     public static void main(String[] args) {
 
         SuperHeroe heroe = new SuperHeroe("Spiderman", 10, true, "Peter Parker", Universe.MARVEL);
