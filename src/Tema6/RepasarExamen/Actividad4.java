@@ -28,7 +28,34 @@ public class Actividad4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Introduce un número romano: ");
+        String romano = sc.nextLine();
+
+        convertirRomano(romano);
 
 
+    }
+
+    static void convertirRomano(String romano) {
+        int[] valores = new int[256];
+
+        String[] romanos = {"I", "V", "X", "L", "C", "D", "M"};
+        int[] numeros = {1, 5, 10, 50, 100, 500, 1000};
+
+        for (int i = 0; i < romanos.length; i++) {
+            valores[romanos[i].charAt(0)] = numeros[i];
+        }
+
+        int resultado = 0;
+
+        for (int i = 0; i < romano.length(); i++) {
+            if (i > 0 && valores[romano.charAt(i)] > valores[romano.charAt(i-1)]) {
+                resultado += valores[romano.charAt(i)] - 2 * valores[romano.charAt(i-1)];
+            } else {
+                resultado += valores[romano.charAt(i)];
+            }
+        }
+
+        System.out.println("El número romano es: " + romano + " es equivalente a " + resultado);
     }
 }

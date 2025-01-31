@@ -30,7 +30,35 @@ public class Actividad2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        generarContrasena();
 
+
+    }
+
+    static void generarContrasena() {
+
+        String contrasena = "";
+
+        for(int i = 0; i < 12; i++) {
+            int aleatorio = (int) (Math.random() * 4);
+
+            switch (aleatorio) {
+                case 0:
+                    contrasena += (char) (Math.random() * 26 + 'A');
+                    break;
+                case 1:
+                    contrasena += (char) (Math.random() * 26 + 'a');
+                    break;
+                case 2:
+                    contrasena += (char) (Math.random() * 10 + '0');
+                    break;
+                case 3:
+                    contrasena += (char) (Math.random() * 15 + '!');
+                    break;
+            }
+
+        }
+        System.out.println("Tu contrasena es: " + contrasena);
 
     }
 }

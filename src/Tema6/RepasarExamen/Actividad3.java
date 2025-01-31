@@ -28,7 +28,41 @@ public class Actividad3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Introduce un texto: ");
+        String texto = sc.nextLine();
+
+        System.out.println("Introduce una palabra a buscar: ");
+        String palabra = sc.nextLine();
 
 
+        int contador = buscarPalabra(texto, palabra);
+        System.out.println("La palabra \"" + palabra + "\" aparece " + contador + " veces.");
+
+
+        int[] posiciones = new int[contador];
+        int indice = 0;
+        for (int i = 0; i < texto.length() - palabra.length(); i++) {
+            if (texto.substring(i, i + palabra.length()).equalsIgnoreCase(palabra)) {
+                posiciones[indice] = i;
+                indice++;
+            }
+        }
+
+        System.out.print("Posiciones: ");
+        for (int i = 0; i < contador; i++) {
+            System.out.print(posiciones[i] + " ");
+        }
+        System.out.println();
+
+    }
+
+    static int buscarPalabra(String texto, String palabra) {
+        int contador = 0;
+        for (int i = 0; i < texto.length() - palabra.length(); i++) {
+            if (texto.substring(i, i + palabra.length()).equalsIgnoreCase(palabra)) {
+                contador++;
+            }
+        }
+        return contador;
     }
 }

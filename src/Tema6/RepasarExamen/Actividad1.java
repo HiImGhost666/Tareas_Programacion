@@ -34,6 +34,23 @@ public class Actividad1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        while(true){
+            System.out.println("Introduce una direccion de correo: ");
+            String correo = sc.nextLine();
+
+            if(correo.contains("@") && correo.contains(".")){
+                if(correo.split("@")[1].split("\\.")[0].length() >= 2 && correo.split("@")[1].split("\\.")[1].length() >= 2){
+
+                    System.out.println("La direccion de correo es valida");
+                    break;
+                } else {
+                    System.out.println("La direccion de correo no es valida: falta el punto despues del @");
+                }
+            } else {
+                System.out.println("La direccion de correo no es valida: falta el @");
+            }
+        }
+
 
 
     }
