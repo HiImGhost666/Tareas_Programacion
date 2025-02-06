@@ -1,3 +1,5 @@
+package Tema7.Vehiculos;
+
 public class MainVehiculos {
     public static void main(String[] args) {
         Coche coche = new Coche("Toyota", "Corolla", 2020, 4);

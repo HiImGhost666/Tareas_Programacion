@@ -1,3 +1,5 @@
+package Tema7.Superheroe;
+
 import java.util.Random;
 
 enum Universe {

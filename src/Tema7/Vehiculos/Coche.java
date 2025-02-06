@@ -1,3 +1,5 @@
+package Tema7.Vehiculos;
+
 public class Coche extends Vehiculo {
     private int numeroPuertas;
 

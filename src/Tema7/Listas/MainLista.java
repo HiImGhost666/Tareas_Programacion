@@ -1,3 +1,5 @@
+package Tema7.Listas;
+
 public class MainLista {
     public static void main(String[] args) {
         Lista lista = new Lista();

@@ -1,3 +1,5 @@
+package Tema7.Listas;
+
 class Cola extends Lista {
     private int inicio;
     private int[] numero;

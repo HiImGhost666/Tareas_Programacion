@@ -1,3 +1,5 @@
+package Tema7.Superheroe;
+
 class Marvel extends SuperHeroe {
     private boolean vengador;
 

@@ -1,4 +1,7 @@
+package Tema7.Listas;
+
 import java.util.ArrayList;
+
 import java.util.Collections;
 class Lista {
     protected ArrayList<String> datos;

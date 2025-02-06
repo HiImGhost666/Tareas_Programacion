@@ -1,3 +1,5 @@
+package Tema7.Vehiculos;
+
 public class Moto extends Vehiculo {
     private boolean tieneSidecar;
 

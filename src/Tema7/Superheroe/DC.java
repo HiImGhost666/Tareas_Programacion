@@ -1,3 +1,5 @@
+package Tema7.Superheroe;
+
 class DC extends SuperHeroe {
     private String ciudad;
 

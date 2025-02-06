@@ -1,3 +1,5 @@
+package Tema7.Vehiculos;
+
 public class Vehiculo {
     protected String marca;
     protected String modelo;
