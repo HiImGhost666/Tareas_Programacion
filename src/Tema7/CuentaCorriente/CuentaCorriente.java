@@ -3,37 +3,42 @@ package Tema7.CuentaCorriente;
 import java.util.Scanner;
 
 public class CuentaCorriente {
-    Scanner sc = new Scanner(System.in);
-    private String DNI;
-    private String titular;
+    // saldo es privado, no puede ser accedido desde fuera de esta clase
     private double saldo;
 
+    // nombre es público, puede ser accedido desde cualquier clase
+    public String nombre;
 
-    public CuentaCorriente(String DNI, String titular, double saldoInicial) {
+    // DNI tiene visibilidad por defecto (sin modificador), solo accesible en el paquete miprimerprograma
+    String DNI;
+
+    // Constructor con saldo inicial
+    public CuentaCorriente(String DNI, String nombre, double saldoInicial) {
         this.DNI = DNI;
-        this.titular = titular;
-        this.saldo = 0;
+        this.nombre = nombre;
+        this.saldo = saldoInicial;
     }
 
-
-    public void retirar(double cantidad){
-        if(cantidad > saldo){
+    // Metodo para retirar dinero
+    public void retirar(double cantidad) {
+        if (cantidad > saldo) {
             System.out.println("Saldo insuficiente. No se pudo retirar " + cantidad + "€");
-        } else{
+        } else {
             saldo -= cantidad;
             System.out.println("Retiro realizado. Nuevo saldo: " + saldo + "€");
         }
     }
 
-    public void ingresar(double cantidad){
+    // Método para ingresar dinero
+    public void ingresar(double cantidad) {
         saldo += cantidad;
-        System.out.println("Deposito realizado. Nuevo saldo: " + saldo + "€");
+        System.out.println("Depósito realizado. Nuevo saldo: " + saldo + "€");
     }
 
-    public void mostrarInfo(){
+    // Método para mostrar información
+    public void mostrarInfo() {
         System.out.println("DNI: " + DNI);
-        System.out.println("Titular: " + titular);
+        System.out.println("Nombre: " + nombre);
         System.out.println("Saldo: " + saldo);
-
     }
 }
