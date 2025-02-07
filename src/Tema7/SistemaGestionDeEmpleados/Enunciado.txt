@@ -1,0 +1,30 @@
+Una empresa necesita gestionar a sus empleados a través de un sistema en Java. Para ello, debes implementar las siguientes clases:
+
+Clase Empleado:
+
+Debe tener los atributos privados:
+nombre (String)
+apellido (String)
+DNI (String)
+salario (double)
+Un constructor que permita inicializar todos los atributos.
+Métodos getter y setter para cada atributo.
+Un método aumentarSalario(double porcentaje), que aumente el salario del empleado según un porcentaje dado.
+Clase Gerente (hereda de Empleado):
+
+Debe incluir un atributo adicional departamento (String).
+Sobreescribe el método aumentarSalario(double porcentaje), de manera que los gerentes siempre reciban un 10% extra sobre el aumento indicado.
+Implementa un método mostrarInformacion() que devuelva una cadena con los datos completos del gerente.
+Clase Empresa:
+
+Tiene un atributo empleados que es un ArrayList<Empleado>.
+Un método agregarEmpleado(Empleado e).
+Un método listarEmpleados(), que imprima en consola los datos de todos los empleados de la empresa.
+Un método buscarEmpleadoPorDNI(String dni), que devuelva el objeto Empleado correspondiente al DNI ingresado o null si no existe.
+Un método calcularGastoSalarial(), que devuelva la suma de los salarios de todos los empleados.
+Pruebas:
+
+Crea una clase Main donde instancies una empresa y agregues varios empleados y gerentes.
+Aumenta el salario de algunos empleados y gerentes y muestra los resultados.
+Busca un empleado por su DNI y muestra su información.
+Muestra el gasto salarial total de la empresa.
