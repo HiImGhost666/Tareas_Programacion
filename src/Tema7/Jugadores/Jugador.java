@@ -28,10 +28,6 @@ public class Jugador {
 
     public static void combate(Jugador uno, Jugador dos){
 
-        int resultadoJugadorUno = uno.dados() + uno.fuerza;
-        int restultadoJugadorDos = dos.dados() + dos.fuerza;
-        String mensaje = "";
-
         if(uno.numVidas == 0){
             System.out.println(uno.getNombre() + " abandona el juego");
             return;
@@ -42,28 +38,36 @@ public class Jugador {
             System.out.println("Batalla de Jugadores");
         }
 
-        uno.registro = uno.añadir(uno.registro, mensaje);
-        if(resultadoJugadorUno > restultadoJugadorDos){
-            mensaje = uno.getNombre() + " ganó el combate con un total de " + resultadoJugadorUno + "\n" + dos.getNombre() + " sacó un " + restultadoJugadorDos;
+        int resultadoJugadorUno = uno.dados() + uno.fuerza;
+        int restultadoJugadorDos = dos.dados() + dos.fuerza;
+
+
+        String mensaje;
+        if (resultadoJugadorUno > restultadoJugadorDos) {
+            mensaje = uno.getNombre() + " ganó el combate con un total de " + resultadoJugadorUno +
+                    "\n" + dos.getNombre() + " sacó un " + restultadoJugadorDos;
             dos.numVidas--;
-        } else if(restultadoJugadorDos > resultadoJugadorUno){
-            mensaje = dos.getNombre() + " ganó el combate con un total de " + restultadoJugadorDos + "\n" + uno.getNombre() + " sacó un " + resultadoJugadorUno;
+        } else if (restultadoJugadorDos > resultadoJugadorUno) {
+            mensaje = dos.getNombre() + " ganó el combate con un total de " + restultadoJugadorDos +
+                    "\n" + uno.getNombre() + " sacó un " + resultadoJugadorUno;
             uno.numVidas--;
-        } else{
+        } else {
             mensaje = "Empate.";
         }
 
-        uno.registro = uno.añadir(uno.registro, mensaje);
-        dos.registro = dos.añadir(dos.registro, mensaje);
+        uno.añadir(mensaje);
+        dos.añadir(mensaje);
 
 
     }
-    public String[] añadir(String[] matriz, String mensaje){
-        String[] aux = new String[matriz.length + 1];
-        for (int i = 0; i < matriz.length; i++) {
-            aux[i] = matriz[i];
+    public String[] añadir(String mensaje){
+        String[] aux = new String[registro.length + 1];
+        for (int i = 0; i < registro.length; i++) {
+            aux[i] = registro[i];
         }
         aux[aux.length - 1] = mensaje;
+        registro = aux; // Se actualiza el array `registro`
+
         return aux;
     }
 
@@ -81,16 +85,23 @@ public class Jugador {
 
 
     public void mostrarRegistro(){
-        System.out.println("Registro de combates de " + nombre);
-        for (String mensaje : registro) {
-            System.out.println(mensaje);
+        System.out.println("Registro de combates de " + nombre + ":");
+        if (registro.length == 0) {
+            System.out.println("No hay combates registrados.");
+        } else {
+            for (String mensaje : registro) {
+                System.out.println(mensaje);
+            }
         }
     }
 
 
-    public String toString(){
-        String texto = "=====Datos del jugador=====" +"\n\tNombre: " + nombre + "\n\tFuerza: " + fuerza + "\n\tNumero de Vidas: "+ numVidas;
-        return (texto);
+    @Override
+    public String toString() {
+        return "===== Datos del jugador =====" +
+                "\n\tNombre: " + nombre +
+                "\n\tFuerza: " + fuerza +
+                "\n\tNumero de Vidas: " + numVidas;
     }
 
 }

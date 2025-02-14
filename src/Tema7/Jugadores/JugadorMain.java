@@ -32,10 +32,9 @@ public class JugadorMain {
         System.out.println(WonderWoman);
         Jugador.combate(batman, WonderWoman);
 
-
+        
         batman.mostrarRegistro();
         WonderWoman.mostrarRegistro();
 
-        System.out.println();
     }
 }
