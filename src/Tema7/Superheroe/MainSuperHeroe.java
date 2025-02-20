@@ -8,11 +8,14 @@ public class MainSuperHeroe {
 
         heroe.presentarse();
         heroe.identidadSecreta();
-        heroe.mostrarDetenidos();
+        heroe2.detiene("Joker");
+        heroe2.mostrarDetenidos();
         heroe2.presentarse();
         heroe2.identidadSecreta();
         heroe2.mostrarDetenidos();
         heroe.Ganador(heroe, heroe2);
 
+        heroe.detiene("Thanos");
+        heroe.mostrarDetenidos();
     }
 }
