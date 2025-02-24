@@ -12,7 +12,7 @@ Solicitar al usuario (mediante un booleano) si llueve, si ha finalizado las tare
 
 El algoritmo debe mostrar mediante un booleano (true o false) si es posible que se le otorgue permiso para ir a la calle.
 
- */
+*/
 
 package Tema1;
 import java.util.Scanner;
