@@ -3,7 +3,7 @@ package Tema7.Persona;
 public class PersonaMain {
     public static void main(String[] args) {
 
-        Persona persona1 = new Persona("Luke", 18, "45981530E");
+        Persona3654 persona1 = new Persona3654("Luke", 18, "45981530E");
 
         persona1.mostrarInfo();
 
