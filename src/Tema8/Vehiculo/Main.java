@@ -24,6 +24,7 @@ public class Main {
         }
 
         // Ordenar por modelo (Comparator)
+
         System.out.println("\nOrdenados por modelo:");
         for (Vehiculo v : vehiculos) {
             System.out.println(v);
