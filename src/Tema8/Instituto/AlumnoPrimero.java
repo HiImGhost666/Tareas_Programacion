@@ -61,9 +61,7 @@ public class AlumnoPrimero extends Alumno {
         }
         return indice;
     }
-    
-    
-    
+
     @Override
     public String toString() {
         return "Alumno: " + this.getApellido() + ", " + this.getNombre() + "; Instituto: " + this.getInstituto() + "; ciclo: " + this.getCiclo() + ". (curso " + this.curso + "º) ";
