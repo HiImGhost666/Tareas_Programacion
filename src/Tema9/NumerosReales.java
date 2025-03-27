@@ -22,8 +22,6 @@ public class NumerosReales {
 
             System.out.println("La suma total es: " + suma);
 
-
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
