@@ -1,8 +1,6 @@
 package Tema8.Biblioteca;
 
 public class LibroFisico implements Libro, Comparable<LibroFisico> {
-
-
     protected final String CODIGO;
     protected final String TITULO;
     protected final String AUTOR;
@@ -24,8 +22,18 @@ public class LibroFisico implements Libro, Comparable<LibroFisico> {
         this.fila = fila;
     }
 
+
+
     public double getPrecio() {
         return precio;
+    }
+
+    public String getAUTOR() {
+        return AUTOR;
+    }
+
+    public String getTITULO() {
+        return TITULO;
     }
 
     public void setPrecio(int precio) {
@@ -74,26 +82,25 @@ public class LibroFisico implements Libro, Comparable<LibroFisico> {
         }
     }
 
+    // Método toString para que la representación del libro sea legible
+    @Override
+    public String toString() {
+        return "Título: " + TITULO + ", Autor: " + AUTOR + ", Páginas: " + PAGINAS + ", Precio: " + precio + "€";
+    }
+
+    // Implementación de compareTo() para ordenar por precio
+    @Override
+    public int compareTo(LibroFisico otroLibro) {
+        return Integer.compare(this.precio, otroLibro.precio);
+    }
+
+
     /**
      * Localiza el libro en la librería.
      */
     public void localizar() {
         System.out.println("El libro " + TITULO + " de " + AUTOR + " está en el pasillo " + pasillo + ", estantería " + estanteria + ", fila " + fila + ".");
     }
+    
 
-    @Override
-    public int compareTo(LibroFisico o) {
-        return Double.compare(this.precio, o.precio);
-    }
-    @Override
-    public String toString() {
-        return "Título: " + TITULO + ", Autor: " + AUTOR + ", Páginas: " + PAGINAS + ", Precio: " + precio + "€";
-    }
-    public String getTITULO() {
-        return TITULO;
-    }
-
-    public String getAUTOR() {
-        return AUTOR;
-    }
 }

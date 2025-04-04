@@ -86,6 +86,8 @@ class Biblioteca {
         Arrays.sort(catalogo, new Comparator<Publicacion>() {
             @Override
             public int compare(Publicacion p1, Publicacion p2) {
+                if (p1 == null) return 1;  // Los null van al final
+                if (p2 == null) return -1;
                 return Integer.compare(p1.getAñoPublicacion(), p2.getAñoPublicacion());
             }
         });
@@ -98,6 +100,8 @@ class Biblioteca {
         Arrays.sort(usuarios, new Comparator<Usuario>() {
             @Override
             public int compare(Usuario u1, Usuario u2) {
+                if (u1 == null) return 1;  // Los null van al final
+                if (u2 == null) return -1;
                 return Integer.compare(u2.getPrestamosActivos(), u1.getPrestamosActivos()); // Orden descendente
             }
         });

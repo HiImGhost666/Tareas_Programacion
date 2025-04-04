@@ -11,8 +11,8 @@ public class BallPhysicsSimulation extends JPanel {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 800;
     private static final int CIRCLE_RADIUS = 300;
-    private static final double GRAVITY = 0.2; // Low gravity
-    private static final double BOUNCINESS = 0.85; // More bouncy
+    private static final double GRAVITY = 0; // Low gravity
+    private static final double BOUNCINESS = 1; // More bouncy
     private static final double GAP_SIZE = Math.toRadians(20); // Larger gap (20 degrees)
     private static final double ROTATION_SPEED = Math.toRadians(0.5); // Slow clockwise rotation
     private static final int MAX_BALLS = 100;

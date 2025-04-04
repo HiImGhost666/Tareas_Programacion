@@ -1,12 +1,12 @@
 package Tema8.Biblioteca;
 
-public class LibroDigital extends LibroFisico implements Digital{
-    private String CODIGO_QR;
-    private int PAGINAS_DIGITALES;
-    private static String[] foro = new String[0];
+public class LibroDigital extends LibroFisico implements Digital {
+    private final String CODIGO_QR;
+    private final int PAGINAS_DIGITALES;
+    private static String[] foro = new String[0]; // Inicializado sin elementos
 
-    public LibroDigital(String CODIGO, String TITULO, String AUTOR, int PAGINAS, int precio, int pasillo, int estanteria, int fila, String CODIGO_QR, int PAGINAS_DIGITALES) {
-        super(CODIGO, TITULO, AUTOR, PAGINAS, precio, pasillo, estanteria, fila);
+    public LibroDigital(LibroFisico libro, String CODIGO_QR, int PAGINAS_DIGITALES) {
+        super(libro.CODIGO, libro.TITULO, libro.AUTOR, libro.PAGINAS, libro.precio, libro.pasillo, libro.estanteria, libro.fila);
         this.CODIGO_QR = CODIGO_QR;
         this.PAGINAS_DIGITALES = PAGINAS_DIGITALES;
     }
@@ -49,5 +49,4 @@ public class LibroDigital extends LibroFisico implements Digital{
         System.out.println("Páginas digitales: " + PAGINAS_DIGITALES);
         System.out.println("Precio: " + precio + "€");
     }
-
 }

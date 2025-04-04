@@ -6,7 +6,7 @@ public class Biblioteca {
     private LibroFisico[] libros;
 
     public Biblioteca() {
-        this.libros = new LibroFisico[0];
+        this.libros = new LibroFisico[0]; // Inicializamos el vector sin elementos
     }
 
     public void add(LibroFisico libro) {
@@ -24,7 +24,7 @@ public class Biblioteca {
         // Reemplazar el array original con el nuevo
         libros = nuevoCatalogo;
 
-        System.out.println("Libro añadido a la biblioteca: " + libro.TITULO);
+        System.out.println("Libro añadido a la biblioteca: " + libro.getTITULO());
     }
 
     public void listado() {
@@ -50,4 +50,5 @@ public class Biblioteca {
     public void ordenarPorAutorInverso() {
         Arrays.sort(libros, new ComparaAutor().reversed());
     }
+
 }
