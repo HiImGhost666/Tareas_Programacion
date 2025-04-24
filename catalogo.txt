@@ -1,0 +1,5 @@
+Coche,Toyota,Corolla,2020,15000.0
+Coche,Honda,Civic,2018,12000.0
+Coche,Ford,Focus,2022,18000.0
+Bicicleta,Xiaomi,MiBike,2021,900.0
+Bicicleta,Specialized,Turbo,2019,2500.0
