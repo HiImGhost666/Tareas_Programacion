@@ -1,0 +1,22 @@
+Valencia::Betis::1::0
+Betis::Osasuna::1::0
+Atletico Madrid::Zaragoza::0::0
+Zaragoza::Valencia::2::2
+Mallorca::Deportivo::0::1
+Deportivo::Atletico Madrid::1::0
+Mallorca::Malaga::1::4
+Malaga::Atletico Madrid::0::2
+Alaves::Barcelona::0::0
+Getafe::Athletic::1::1
+Villarreal::Sevilla::1::1
+Betis::Zaragoza::0::0
+Valencia::Deportivo::2::2
+Deportivo::Betis::1::1
+Barcelona::Valencia::2::2
+Getafe::Mallorca::1::1
+Malaga::Alaves::0::0
+Cadiz::Villarreal::1::1
+Sevilla::Cadiz::0::0
+Zaragoza::Deportivo::1::1
+Barcelona::Zaragoza::2::2
+Real Sociedad::Betis::1::1
