@@ -12,7 +12,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ArrayList<PartidoFutbol> partidos = new ArrayList<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\n3two\\IdeaProjects\\Tareas_Programacion\\partidos.txt"))){
+        try(BufferedReader br = new BufferedReader(new FileReader("partidos.txt"))){
             String linea;
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split("::");
