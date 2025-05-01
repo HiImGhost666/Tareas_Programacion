@@ -1,0 +1,30 @@
+I001;Amazonas;4500;Alta;Natural;Relámpago
+I002;Australia;8000;Muy Alta;Provocado;Incendio intencionado
+I003;California;3200;Media;Natural;Autocombustión
+I004;Siberia;6000;Alta;Natural;Ola de calor
+I005;Grecia;2300;Alta;Provocado;Negligencia
+I006;Canadá;4100;Muy Alta;Natural;Relámpago
+I007;España;2500;Media;Provocado;Fuegos agrícolas
+I008;Portugal;1500;Media;Provocado;Accidente industrial
+I009;Sudáfrica;1700;Baja;Natural;Sequía extrema
+I010;India;2800;Alta;Provocado;Quema de residuos
+I011;México;3400;Media;Natural;Relámpago
+I012;Italia;2200;Baja;Provocado;Negligencia
+I013;Argentina;1900;Alta;Natural;Autocombustión
+I014;Chile;3700;Muy Alta;Provocado;Incendio premeditado
+I015;Francia;2400;Media;Natural;Ola de calor
+I016;Alemania;2900;Baja;Provocado;Accidente industrial
+I017;Vietnam;4100;Alta;Natural;Relámpago
+I018;Indonesia;5300;Muy Alta;Natural;Sequía extrema
+I019;Nigeria;1200;Media;Provocado;Fuegos agrícolas
+I020;Colombia;2800;Alta;Natural;Autocombustión
+I021;Perú;3100;Alta;Provocado;Negligencia
+I022;Rusia;6800;Muy Alta;Natural;Ola de calor
+I023;Japón;1500;Baja;Natural;Relámpago
+I024;Corea del Sur;2100;Media;Provocado;Accidente industrial
+I025;Sudán;1800;Media;Natural;Sequía extrema
+I026;Egipto;2700;Alta;Provocado;Fuegos agrícolas
+I027;Nueva Zelanda;2600;Alta;Natural;Relámpago
+I028;Tailandia;2000;Baja;Provocado;Accidente doméstico
+I029;Filipinas;3100;Alta;Natural;Autocombustión
+I030;Marruecos;2200;Media;Provocado;Negligencia
