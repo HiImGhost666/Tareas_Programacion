@@ -1,0 +1,8 @@
+Gato;4;true
+Perro;4;true
+Pato;2;false
+Pez;0;true
+Pinguino;2;false
+Conejo;4;true
+Gallina;1;false
+Cerdo;4;true
